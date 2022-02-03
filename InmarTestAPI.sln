@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InmarTestAPI", "InmarTestAPI.csproj", "{35874778-471E-4EE0-8BEB-8F68E1830173}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InmarTest", "..\InmarTest\InmarTest.csproj", "{F60ACE32-3E12-4E89-9FBD-E8F0CFCD3B65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{21AA89F7-C392-4BA1-8157-15C88F99F315}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\InmarSQLTest.txt = ..\..\..\Desktop\InmarSQLTest.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35874778-471E-4EE0-8BEB-8F68E1830173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35874778-471E-4EE0-8BEB-8F68E1830173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35874778-471E-4EE0-8BEB-8F68E1830173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35874778-471E-4EE0-8BEB-8F68E1830173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60ACE32-3E12-4E89-9FBD-E8F0CFCD3B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60ACE32-3E12-4E89-9FBD-E8F0CFCD3B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60ACE32-3E12-4E89-9FBD-E8F0CFCD3B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60ACE32-3E12-4E89-9FBD-E8F0CFCD3B65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC59CAE9-CB3C-4FF4-8B57-6ABF0248E191}
+	EndGlobalSection
+EndGlobal
