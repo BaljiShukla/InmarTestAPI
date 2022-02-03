@@ -1,26 +1,53 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace InmarTestAPI
+namespace InmarTest
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Console.WriteLine("Hello World!");
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
+        /// <summary>
+        /// Part1 - 1
+        /// </summary>
+        static void CheckDivision()
+        {
+            for (int number = 1; number <= 100; number++)
+            {
+                string result = string.Empty;
+                if (number / 3 == 0 && number % 5 == 0)
                 {
-                    webBuilder.UseStartup<Startup>();
-                });
+                    result = "fizbuzz";
+                }
+                else if (number % 3 == 0)
+                {
+                    result = "fizz";
+                }
+                else if (number % 5 == 0)
+                {
+                    result = "buzz";
+                }
+
+                Console.WriteLine(result);
+            }
+        }
+
+        /// <summary>
+        /// Part 1 -2
+        /// </summary>
+        static void ReverseString()
+        {
+            Console.WriteLine("Enter string to be reversed");
+            string input = Console.ReadLine();
+            string result = string.Empty;
+            for(int index=input.Length-1; index>=0;index--)
+            {
+                result += input[index];
+            }
+
+            Console.WriteLine(string.Format("Revesred String is:{0}", result));
+        }
     }
 }
