@@ -1,0 +1,28 @@
+SQL Test
+-------------
+
+1. Select CustomerId, Name
+	from Customer where Name like "Joe%"
+
+2. Select P.Name
+from OrderProduct OP
+inner join Order O on O.OrderId = OP.OrderId
+Inner join Product P on P.ProductId  = OP.ProductId
+Inner Join Customer C on C.CustomerId = O.CustomerId
+
+where C.Name="Joe" and O.CreatedAt > 11/1/2016
+
+
+3. Select Sum(P.Price) as TotalAmount
+from OrderProduct OP
+inner join Order O on O.OrderId = OP.OrderId
+Inner join Product P on P.ProductId  = OP.ProductId
+Inner Join Customer C on C.CustomerId = O.CustomerId
+
+where C.Name="Joe" 
+
+4. Select C.Name , Count(C.Name)
+from OrderProduct OP
+inner join Order O on O.OrderId = OP.OrderId
+Inner Join Customer C on C.CustomerId = O.CustomerId
+ Group by C.Name having count(C.Name)>1
